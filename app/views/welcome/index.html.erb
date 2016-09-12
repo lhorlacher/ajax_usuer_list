@@ -1,0 +1,32 @@
+<h1>All Users</h1>
+
+<button id='view_form'>Create User</button>
+
+<div id='edit_form_div' class='no-display'>
+	<form id='edit_form'>
+		<input id='edit_first_name' type='text' placeholder='First Name' name='user[first_name]'>
+		<br>
+		<input id='edit_last_name' type='text' placeholder='Last Name' name='user[last_name]'>
+		<br>
+		<input id='edit_phone_number' type='text' placeholder='Phone Number' name='user[phone_number]'>
+		<br>
+		<input type='hidden' id='user_id'>
+		<input type='submit'>
+	</form>
+</div>
+
+
+<div id='form_div' class='no-display'>
+	<form action='/users' method='POST' id='form'>
+		<input id='user_first_name' type='text' placeholder='First Name' name='user[first_name]' />
+		<br>
+		<input id='user_last_name' type='text' placeholder='Last Name' name='user[last_name]' />
+		 <br>
+		<input id='user_phone_number' type='text' placeholder='Phone Number' name='user[phone_number' />
+		<br>
+		<input type='submit'>
+	</form>
+</div>
+
+<ul id='users'></ul>
+
